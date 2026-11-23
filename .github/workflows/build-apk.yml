@@ -26,6 +26,9 @@ jobs:
       - name: Crear proyecto Android
         run: npx cap add android
 
+      - name: Icono de la app
+        run: cp -r icon-res/* android/app/src/main/res/
+
       - name: Permisos de micrófono
         run: |
           M=android/app/src/main/AndroidManifest.xml
